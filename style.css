@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  background: url("assets/bg.jpeg") no-repeat center center fixed;
+  background: url("bg.jpeg") no-repeat center center fixed;
   background-size: cover;
   color: white;
 }
@@ -91,3 +91,4 @@ body {
   min-height: 160px;
   line-height: 1.8;
 }
+
