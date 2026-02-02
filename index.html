@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Koko</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOCK SCREEN -->
+<div id="lock-screen">
+  <h2>For Koko 🖤</h2>
+  <p>This page is private</p>
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="unlock()">Enter</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="content">
+
+  <audio id="bg-music" loop>
+    <source src="assets/bgm.mp3" type="audio/mpeg">
+  </audio>
+
+  <h1 class="title">A Week for You, Koko 🌿</h1>
+
+  <div class="days">
+  <button onclick="showDay(1)">Day 1 🌱 Friendship</button>
+  <button onclick="showDay(2)">Day 2 🌼 Appreciation</button>
+  <button onclick="showDay(3)">Day 3 🕊️ Comfort</button>
+  <button onclick="showDay(4)">Day 4 🤍 Trust</button>
+  <button onclick="showDay(5)">Day 5 🌸 Gratitude</button>
+  <button onclick="showDay(6)">Day 6 🫂 Care</button>
+  <button onclick="showDay(7)">Day 7 💙 Always</button>
+</div>
+
+
+  <div id="message-box"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

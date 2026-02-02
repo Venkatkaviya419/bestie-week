@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: url("assets/bg.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* LOCK */
+#lock-screen {
+  height: 100vh;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#lock-screen input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 220px;
+  margin-top: 10px;
+}
+
+#lock-screen button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: none;
+  background: black;
+  color: white;
+}
+
+/* CONTENT */
+#content {
+  display: none;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.65);
+  padding: 20px 15px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* DAYS */
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.days button {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.days button:nth-child(1) { animation-delay: 0.2s; }
+.days button:nth-child(2) { animation-delay: 0.4s; }
+.days button:nth-child(3) { animation-delay: 0.6s; }
+.days button:nth-child(4) { animation-delay: 0.8s; }
+.days button:nth-child(5) { animation-delay: 1s; }
+.days button:nth-child(6) { animation-delay: 1.2s; }
+.days button:nth-child(7) { animation-delay: 1.4s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MESSAGE */
+#message-box {
+  max-width: 750px;
+  margin: 35px auto;
+  padding: 25px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  min-height: 160px;
+  line-height: 1.8;
+}
